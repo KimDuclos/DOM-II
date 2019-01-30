@@ -72,3 +72,9 @@ const subBtn = document.querySelector('.fName')
 subBtn.addEventListener('focus', e => {
     subBtn.style.color = 'orange';
 }, true);
+
+// 11. When clicked, 
+const subBtn2 = document.queryCommandEnabled('lName')
+subBtn.addEventListener('blur', e => {
+    subBtn2.style.color = 'red';
+}, true);
