@@ -350,3 +350,12 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .formBox {
+  display: flex;
+  justify-content: center;
+}
+.home .formBox .funForm {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%;
+}
