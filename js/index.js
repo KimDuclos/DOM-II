@@ -65,10 +65,6 @@ const form = document.querySelector('.submit')
 form.addEventListener('click', e => {
     alert('You submitted your form. Cool beans.');
     e.stopPropagation();
-    TweenMax.to(e.currentTarget, 1, {
-        width:200,
-        ease:Bounce.easeOut
-      });
 });
 
 // 10. When clicked, changes the test color in the first name box of the form
