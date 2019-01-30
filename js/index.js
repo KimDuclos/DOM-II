@@ -82,3 +82,18 @@ const subBtn2 = document.queryCommandEnabled('lName')
 subBtn.addEventListener('blur', e => {
     subBtn2.style.color = 'red';
 }, true);
+
+//stop propagation demo when clicked
+//click the destination container and contained submit button to produce
+//alert boxes which will show stop Propagation working
+
+const destinationBox = document.getElementById('funInTheSun');
+destinationBox.addEventListener('click', e => {
+    alert('You clicked the Fun In the Sun box!');
+});
+
+const destSignUpBtn = document.getElementById('signUp1');
+    destSignUpBtn.addEventListener('click', e => {
+    alert('You clicked the destination sign up button!')
+    e.stopPropagation();
+});
