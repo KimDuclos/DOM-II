@@ -35,6 +35,10 @@ let changeBlogBtn = document.getElementById('blogBtn');
     changeBlogBtn.style.height = "0px";
 });
 
+// add preventDefault to Contact Button
+document.getElementById('contactBtn').addEventListener('click', e => {
+    event.preventDefault();
+});
 
 // 6. mouse wheel turns contact button black
 let changeContactBtn = document.getElementById('contactBtn');
