@@ -21,7 +21,7 @@ let changeHomeBtn = document.getElementById('homeBtn');
 });
 
 
-// 4. double click - change size of second button
+// 4. double click - change border color of second button
 let changeAboutBtn = document.getElementById('aboutBtn');
     changeAboutBtn.addEventListener('dblclick', e => {
     changeAboutBtn.style.borderColor = "blue";    
@@ -56,7 +56,7 @@ let changeSignUp2 = document.getElementById('signUp2');
 });
 
 
-// form triggers alert window when clicked
+// 9. form triggers alert window when clicked
 const form = document.querySelector('.submit')
 form.addEventListener('click', e => {
     alert('You submitted your form. Cool beans.');
@@ -66,3 +66,9 @@ form.addEventListener('click', e => {
         ease:Bounce.easeOut
       });
 });
+
+// 10. When clicked, changes the test color in the first name box of the form
+const subBtn = document.querySelector('.fName')
+subBtn.addEventListener('focus', e => {
+    subBtn.style.color = 'orange';
+}, true);
